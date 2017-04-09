@@ -1,0 +1,35 @@
+Question 1
+solution is under truncate folder
+source code is under src/main/java folder
+exam.controller.SubscriptionController; exam.service.OrderDetailParserService; exam.service.TruncateService;
+exam.service.TruncateServiceImpl;
+
+test code is under src/test/java folder
+exam.service.TruncateServiceImplTest
+
+Used spring framework 
+TruncateService, OrderDetailParserService are injected into SubscriptionController
+
+OrderDetailParserService is a stub to make sure SubscriptionController compile
+TruncateService define truncate method and implemented by TruncateServiceImpl.
+TruncateServiceImpl is implemented with TDD, TruncateServiceImplTest define test cases based on  example and then implemented. 
+
+Question 2
+
+The solution is under bashtest folder
+replaceTokens.sh is the script.
+input/input.html has the template
+config/prod.properties and config/prod.properties are property files
+output is the output folder
+
+Firstly, it read input file into template_content
+Secondly, it read property file and loop through the propperties and replace the place holders in template_content
+Lastly, it write the updated template_content into output file
+
+example commands:
+./replaceTokens.sh ./input/input.html ./config/test.properties ./output/output.html
+./replaceTokens.sh ./input/input.html ./config/prod.properties ./output/output.html
+
+
+
+
